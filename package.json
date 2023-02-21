@@ -1,0 +1,34 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "Recipe Manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "snow plek",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chokidar": "^3.5.3",
+    "consolidate": "^0.16.0",
+    "dotenv": "^16.0.3",
+    "dust": "^0.3.0",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "2.7",
+    "express": "^4.18.2",
+    "image-to-base64": "^2.2.0",
+    "multer": "^1.4.4",
+    "node-base64-image": "^2.0.4",
+    "pg": "^8.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newbie8800/recipes2.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/newbie8800/recipes2/issues"
+  },
+  "homepage": "https://github.com/newbie8800/recipes2#readme"
+}

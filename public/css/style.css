@@ -1,0 +1,84 @@
+body{
+    margin-top:10px;
+    background:#f9f9f9;
+}
+
+#inputs {
+    background:blue;
+    width: 154.5px;
+    /* position:absolute; */
+    /* margin-top:10px; */
+    color : blue;
+    left: -6.5px;
+}
+
+#inputs2 {
+    background:blue;
+    width: 154.5px;
+    color : blue;
+    left: -6.5px;
+}
+
+#nostyle {
+ 
+    list-style-type: none;
+    
+   
+}
+#nostyle2 {
+ 
+    list-style-type: none;
+   
+}
+
+#dispimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+}
+
+#editimg {
+    width: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 20%; */
+}
+
+.preview{
+    color : grey;
+   
+    
+}
+
+#tn{
+    line-height: 1.5em;
+    height: 3em;
+    /* overflow:auto; */
+    color :black;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  white-space: nowrap;
+
+  
+}
+#tn2{
+    line-height: 1.5em;
+    height: 3em;
+    /* overflow:auto; */
+    color :black;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  white-space: nowrap;
+
+  
+}
+
+.thumbnail{
+    width: 100%;
+    /* width: 50%; */
+}

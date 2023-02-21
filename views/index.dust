@@ -1,0 +1,348 @@
+{>"layout" /}
+
+{<body}
+<style>h5 {text-align: center;}</style>
+
+
+    <h5><b>HIGHLIGHTS</b></h5>
+
+   <!-- <video autoplay muted loop id="myVideo"> --> 
+    <video autoplay id="dispimg" width="320" height="240" controls ><source src="web_img/ABKHA_PERFUMERY3.mp4" type="video/mp4"></video>
+     <br />
+
+    <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">
+    Add recipe
+    </button>
+   
+
+  
+
+                    
+
+
+    {#recipes2}
+        <div class="well">
+            <h4>{name} <center><img width="32" height="64" object-fit= "contain" src = data:image/png;base64,{sources}></img></center>
+            
+            <button class="btn btn-default pull-right" data-toggle="collapse" href="#recipe_{id}" aria-expanded="false" aria-controls="recipe_{id}">
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            </button>
+            <br />
+            </h4>
+        
+            <div class="collapse" id="recipe_{id}">
+                <br />
+                <br />
+                <p><strong>Price: </strong>{ingredients}</p>
+                <p><strong>Decription: </strong>{directions}</p>
+                <br/>
+                <p><img id = "dispimg" src = data:image/png;base64,{sources}></img></p>
+                <br />
+                <hr />
+                
+                
+            
+                <button class="btn btn-default edit-recipe"
+                id="edit{id}"
+                data-toggle="modal" 
+                data-target="#editFormModal"
+                data-id="{id}"
+                data-name="{name}"
+                data-ingredients="{ingredients}"
+                data-directions="{directions}"
+                data-sources="{sources}"
+                style="display: none">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true">
+                    </span>
+                </button>
+
+                <button class="btn btn-danger delete-recipe" id="del{id}" data-id="{id}" data-sources="{sources}" style="display: none">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true">
+                    </span>
+                </button>
+
+                <!-- <button type="button" id="{id}" onclick="document.getElementById('demo{id}').innerHTML = Date() + '\n' + window.location.host">
+                    Click{id} me to display Date and Time.</button> -->
+               
+               
+                <h4 id="demo{id}" >here</h4>
+                <p id="semo{id}">bla1</p>
+                    <!-- <p id="demo{id}"  >bla2</p> -->
+
+                <button type="button" id="mybtn{id}">Date today</button>
+
+                <a href="https://t.me/newUserz99"><img align="right" src="/web_img/tele.png" alt="Telelink" style="width:30px;height:30px;"></a>
+
+                <script>
+                    const elemental{id} = document.getElementById('demo{id}');
+                    const element{id} = document.getElementById('mybtn{id}');
+
+                    document.getElementById("demo{id}").innerHTML = window.location.host;
+
+                    element{id}.addEventListener('click', myFunction{id});
+                    function myFunction{id}() {
+                        document.getElementById("semo{id}").innerHTML = Date() + window.location.host; 
+                        if (window.location.host == "localhost:3000"){
+                            document.getElementById("add_id").style.display="block";
+                            document.getElementById("del{id}").style.display="block"; 
+                            document.getElementById("edit{id}").style.display="block"; 
+                        }                
+                    }
+                </script>   
+              
+            </div>
+        
+        </div>
+
+        
+    {/recipes2}
+
+    
+    <!-- Add form Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="post" action="/add" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add Recipe</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="preview">
+                                    <p>No image selected</p>
+                                </div>
+                                <div class="caption">                       
+                                        <p id ="tn">...</p>                
+                                    <div class="input-group input-group-lg">          
+                                        <input type="file" id="inputs" name="image" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" accept=".jpg, .jpeg, .png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Recipe Name</label>
+                        <input type="text" class="form-control"
+                        name="name" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <textarea class="form-control"
+                        name="ingredients"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Directions</label>
+                        <textarea class="form-control"
+                        name="directions"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closez()" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="save"/>
+                </div>
+
+               
+
+            </form>
+
+ 
+    <br/>
+           
+
+        </div>
+    </div>
+    </div>
+
+    
+ 
+    <!-- Edit form Modal -->
+    <div class="modal fade" id="editFormModal" tabindex="-1" role="dialog" aria-labelledby="editFormModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="post" action="/edit" enctype="multipart/form-data">
+                <input type="hidden" id="edit-form-id" name="id"/>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edit Recipe</h4>
+                </div>
+                <div class="modal-body">
+ 
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="preview2">
+                                {#recipes2}                               
+                                    <p><img id = "dispimg" src = data:image/png;base64,{sources}></img></p>  
+                                  {/recipes2}   
+                                 
+                                </div>       
+                                                 
+                                <div class="caption">                       
+                                        <p id ="tn2">...</p>                
+                                    <div class="input-group input-group-lg">          
+                                       < input type="file" id="inputs2" name="image" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" accept=".jpg, .jpeg, .png" multiple required>
+                                     <!--   <input type="file" id="inputs2" name="image" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" > thisa -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Recipe Name</label>
+                        <input type="text" class="form-control"
+                        name="name" id="edit-form-name"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <textarea class="form-control"
+                        name="ingredients" id="edit-form-ingredients"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Directions</label>
+                        <textarea class="form-control"
+                        name="directions" id="edit-form-directions"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="save"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+{/body}
+
+                  
+
+<script>
+//sana
+
+
+const input = document.getElementById('inputs');
+const preview = document.querySelector('.preview');
+const image = document.createElement('img');
+const listItem = document.createElement('li');
+
+
+ input.addEventListener('change', updateImageDisplay);
+    function updateImageDisplay() {
+
+         while (preview.firstChild) {
+            preview.removeChild(preview.firstChild);
+        }
+
+          const curFiles = input.files;
+        if (curFiles.length === 0) {
+         
+        } else {
+          
+            const list = document.createElement('ol');
+           
+            preview.appendChild(list);
+             
+             for (const file of curFiles) {
+                
+                listItem.setAttribute("id", "nostyle");
+
+                if (validFileType(file)) {
+                    document.getElementById("tn").innerHTML = file.name;
+                  
+                    
+                    
+                   var wd =60;
+                    image.src = URL.createObjectURL(file);
+                   image.style.width =wd+"px";
+
+                    listItem.appendChild(image);
+                    
+                }else {
+
+                }
+                list.appendChild(listItem);
+            }
+        }
+    
+        }
+
+        const fileTypes = [
+        "image/apng",
+        "image/bmp",
+        "image/gif",
+        "image/jpeg",
+        "image/pjpeg",
+        "image/png",
+        "image/svg+xml",
+        "image/tiff",
+        "image/webp",
+        "image/x-icon"
+    ];
+
+     function validFileType(file) {
+        return fileTypes.includes(file.type);
+    }
+
+ 
+
+    function closez(){
+        if (listItem.firstChild) {
+    listItem.removeChild(image);
+}
+        
+        
+         document.getElementById("tn").innerHTML = "...";
+    }
+      
+const input2 = document.getElementById('inputs2');
+const previews2 = document.querySelector('.preview2');
+
+input2.addEventListener('change', updateImageDisplay2);
+    function updateImageDisplay2() {
+
+         while (previews2.firstChild) {
+            previews2.removeChild(previews2.firstChild);
+        }
+
+          const curFiles2 = input2.files;
+        if (curFiles2.length === 0) {
+            
+        } else {
+         
+            const list2 = document.createElement('ol');
+           
+            previews2.appendChild(list2);
+             
+             for (const file2 of curFiles2) {
+                const listItem2 = document.createElement('li');
+                listItem2.setAttribute("id", "nostyle2");
+
+                if (validFileType(file2)) {
+                    document.getElementById("tn2").innerHTML = file2.name;
+                   
+                    const image2 = document.createElement('img');
+                   var wd2 =60;
+                    image2.src = URL.createObjectURL(file2);
+                   image2.style.width =wd2+"px";
+
+                    listItem2.appendChild(image2);
+                    
+                }else {
+
+                }
+                list2.appendChild(listItem2);
+            }
+        }
+    
+        }
+
+
+</script>
