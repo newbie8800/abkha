@@ -7,8 +7,8 @@
     <br />
     <h5><b>HIGHLIGHTS</b></h5>
 
-   <!-- <video autoplay muted loop id="myVideo"> --> 
-    <video autoplay id="dispimg" width="320" height="240" controls ><source src="web_img/ABKHA_PERFUMERY3.mp4" type="video/mp4"></video>
+   
+    <video id="dispimg" width="320" height="240" controls ><source src="web_img/ABKHA_PERFUMERY3.mp4" type="video/mp4" preload="none"></video>
      <br />
 
     <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">
@@ -35,7 +35,7 @@
                 <br />
                 <br />
                 <p><strong>Price: </strong>{ingredients}</p>
-                <p><strong>Decription: </strong>{directions}</p>
+                <p><strong>Description: </strong>{directions}</p>
                 <br/>
                 <p><img id = "dispimg" src = data:image/png;base64,{sources}></img></p>
                 <br />
@@ -62,7 +62,7 @@
                     </span>
                 </button>
 
-                <!-- <button type="button" id="{id}" onclick="document.getElementById('demo{id}').innerHTML = Date() + '\n' + window.location.host">
+                <!-- <button type="button" id="{id}" onclick="document.getElementById('demo{id}').innerHTML = Date() + window.location.host">
                     Click{id} me to display Date and Time.</button> -->
                
                
@@ -78,7 +78,7 @@
                     const elemental{id} = document.getElementById('demo{id}');
                     const element{id} = document.getElementById('mybtn{id}');
 
-                    document.getElementById("demo{id}").innerHTML = window.location.host;
+                    document.getElementById("demo{id}").innerHTML = window.location.host +  '//'+ window.location.hostname + '//' + window.location.port + '//' + window.location.protocol +'//' + window.location.origin + '//' +'uwn-usr' +  '//'+ location.host + '//'+ location.hostname + '//' + location.port + '//' + location.protocol + '//' + location.origin;
 
                     element{id}.addEventListener('click', myFunction{id});
                     function myFunction{id}() {
