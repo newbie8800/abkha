@@ -5,11 +5,17 @@
 
     <h5><b>ABKHA</b></h5>
     <br />
-    <h5><b>HIGHLIGHTS</b></h5>
 
-   
-    <video id="dispimg" width="320" height="240" controls ><source src="web_img/ABKHA_PERFUMERY3.mp4" type="video/mp4" preload="none"></video>
-     <br />
+<div class="alert alert-info" role="alert">
+  <a href="#" class="alert-link">
+
+    <h5><b><span class="label label-warning">HIGHLIGHTS</span></b></h5>
+
+   <iframe id="dispimg" height="240" width="320" src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0"></iframe>
+   </a>
+</div>
+    <h5><b><span class="label label-info">FOR SALE</span></b></h5>
+    
 
     <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">
     Add recipe
@@ -66,9 +72,9 @@
                     Click{id} me to display Date and Time.</button> -->
                
                
-                <h4 id="demo{id}" >here</h4>
-                <p id="semo{id}">bla1</p>
-                    <!-- <p id="demo{id}"  >bla2</p> -->
+                
+                <p id="semo{id}">...</p>
+                  
 
                 <button type="button" id="mybtn{id}">Date today</button>
 
@@ -78,7 +84,7 @@
                     const elemental{id} = document.getElementById('demo{id}');
                     const element{id} = document.getElementById('mybtn{id}');
 
-                    document.getElementById("demo{id}").innerHTML = window.location.host +  '//'+ window.location.hostname + '//' + window.location.port + '//' + window.location.protocol +'//' + window.location.origin + '//' +'uwn-usr' +  '//'+ location.host + '//'+ location.hostname + '//' + location.port + '//' + location.protocol + '//' + location.origin;
+                   
 
                     element{id}.addEventListener('click', myFunction{id});
                     function myFunction{id}() {
