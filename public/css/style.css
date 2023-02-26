@@ -82,3 +82,54 @@ body{
     width: 100%;
     /* width: 50%; */
 }
+
+
+.slider {
+    perspective: 1200px;
+    padding-top: 5%;
+    /* padding-right: 50%; */
+}
+
+.spinner{
+    transform-style: preserve-3d;
+    height: 300px;
+    transform-origin: 50% 50% -500px;
+    transition: 1s;
+}
+
+.spinner iframe{
+    height:300px;
+    width:400px;
+    position:absolute;
+    left:20%;
+    transform-origin: 50% 50% -500px;
+    outline: 1px solid transparent;
+}
+
+.spinner iframe:nth-child(1) { transform: rotateY(0deg)}
+.spinner iframe:nth-child(2) { transform: rotateY(-45deg)}
+.spinner iframe:nth-child(3) { transform: rotateY(-90deg)}
+.spinner iframe:nth-child(4) { transform: rotateY(-135deg)}
+.spinner iframe:nth-child(5) { transform: rotateY(-180deg)}
+.spinner iframe:nth-child(6) { transform: rotateY(-225deg)}
+.spinner iframe:nth-child(7) { transform: rotateY(-270deg)}
+.spinner iframe:nth-child(8) { transform: rotateY(-315deg)}
+
+.slider ~ span {
+    color: white;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    /* margin-top: -6rem; */
+    border-bottom: none;
+    line-height: 0;
+
+}
+
+.slider ~ span:hover{
+    color:#888;
+    cursor: pointer;
+}
