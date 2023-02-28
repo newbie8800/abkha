@@ -44,7 +44,7 @@ body{
     margin-left: auto;
     margin-right: auto;
    
-   
+   /* this */
 }
 
 #editimg {
@@ -120,8 +120,9 @@ body{
 .spinner iframe:nth-child(4) { transform: rotateY(-135deg)}
 .spinner iframe:nth-child(5) { transform: rotateY(-180deg)}
 .spinner iframe:nth-child(6) { transform: rotateY(-225deg)}
-.spinner iframe:nth-child(7) { transform: rotateY(-270deg)}
-.spinner iframe:nth-child(8) { transform: rotateY(-315deg)}
+/* .spinner iframe:nth-child(7) { transform: rotateY(-270deg)}
+.spinner iframe:nth-child(8) { transform: rotateY(-315deg)} */
+/* this */
 
 .slider ~ span {
     color: white;
@@ -154,7 +155,7 @@ body{
         height:300px;
         width:400px;
         position:absolute;
-        left:50%;
+        left:25%;
         transform-origin: 50% 50% -500px;
         outline: 1px solid transparent;
     }
