@@ -11,7 +11,7 @@
 
 <div class="alert alert-info" role="alert">
     <h5><b><span class="label label-warning">HIGHLIGHTS</span></b></h5>
-        <div class="slider">
+        <div class="slider">                 
                 <div class="spinner">
                     <iframe id="dispvid" src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0" alt="" ></iframe> 
                     
@@ -21,24 +21,27 @@
                 
                     <iframe id="dispvid" src="https://www.youtube.com/embed/NQliRklulAc?autoplay=0" alt="" ></iframe>
                     <iframe id="dispvid" src="https://www.youtube.com/embed/0mAZNV-c8SE?autoplay=0" alt="" ></iframe>
-                    <iframe id="dispvid" src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>      
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>              
                 </div>
-                <div id="btnbla">
-                <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
-                <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
-                </div> 
+                   
         </div>   
 </div>
 
-<h5><b><span  class="label label-info" onclick="getAdmin()">FOR SALE</span></b></h5>
-   
+                        <div id="btnbla">
+                        <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
+                        <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
+                        </div> 
+
+<div id="hbla"><h5><b><span  class="label label-info" onclick="getAdmin()">FOR SALE</span></b></h5></div> 
+
+ 
 
     <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">
     Add recipe
     </button>
    
 
-  
+  <div id="sumdumid"><center><h4>☺☺☺</h4></center></div>
  
                     
 

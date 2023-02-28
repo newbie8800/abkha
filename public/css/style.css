@@ -146,9 +146,11 @@ body{
 }
 
 .alignleft {
+    display: block;
 	float: left;
 }
 .alignright {
+    display: block;
 	float: right;
 }
 .alert-info {
