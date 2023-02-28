@@ -17,16 +17,24 @@
    
    <div class="slider">
         <div class="spinner">
-            <iframe src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0" alt="" ></iframe>    
-            <iframe src="https://www.youtube.com/embed/8BQEYBoo6XU?autoplay=0" alt="" ></iframe>   
-            <iframe src="https://www.youtube.com/embed/dsyCgDDfEM8?autoplay=0" alt="" ></iframe>
-            <iframe src="https://www.youtube.com/embed/NQliRklulAc?autoplay=0" alt="" ></iframe>
-            <iframe src="https://www.youtube.com/embed/0mAZNV-c8SE?autoplay=0" alt="" ></iframe>
-            <iframe src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>      
+            <iframe id="dispvid" src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0" alt="" ></iframe> 
+              
+            <iframe id="dispvid" src="https://www.youtube.com/embed/8BQEYBoo6XU?autoplay=0" alt="" ></iframe>   
+            
+            <iframe id="dispvid" src="https://www.youtube.com/embed/dsyCgDDfEM8?autoplay=0" alt="" ></iframe>
+        
+            <iframe id="dispvid" src="https://www.youtube.com/embed/NQliRklulAc?autoplay=0" alt="" ></iframe>
+            <iframe id="dispvid" src="https://www.youtube.com/embed/0mAZNV-c8SE?autoplay=0" alt="" ></iframe>
+            <iframe id="dispvid" src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>      
         </div>
 
-        <span style="float: left;" onclick="galleryspin('-')"><h1 style="color: maroon;">&lt;</h1></span>
-        <span style="float: right;" onclick="galleryspin('')"><h1 style="color: maroon;">&gt;</h1></span>
+
+<div id="btnbla">
+  <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
+  <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
+</div>
+
+   
            
     </div>
 
@@ -40,7 +48,8 @@
 
 </a>
 </div>
-    <h5><b><span class="label label-info" onclick="getAdmin()">FOR SALE</span></b></h5>
+
+
     
 
     <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">

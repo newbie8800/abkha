@@ -39,6 +39,14 @@ body{
    
 }
 
+#dispvid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
+
 #editimg {
     width: 60px;
     display: block;
@@ -101,7 +109,7 @@ body{
     height:300px;
     width:400px;
     position:absolute;
-    left:20%;
+    left:17%;
     transform-origin: 50% 50% -500px;
     outline: 1px solid transparent;
 }
@@ -133,3 +141,29 @@ body{
     color:#888;
     cursor: pointer;
 }
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .spinner iframe{
+        height:300px;
+        width:400px;
+        position:absolute;
+        left:50%;
+        transform-origin: 50% 50% -500px;
+        outline: 1px solid transparent;
+    }
+    #dispvid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: auto;
+       
+    }
+  }
