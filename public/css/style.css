@@ -151,6 +151,10 @@ body{
 .alignright {
 	float: right;
 }
+.alert-info {
+    height:400px; 
+}
+
 
 @media only screen and (max-width: 600px) {
     .spinner iframe{
@@ -174,5 +178,9 @@ body{
         
         padding-top: 5%;
         /* padding-right: 50%; */
+    }
+
+    .alert-info {
+        height:300px; 
     }
   }

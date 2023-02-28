@@ -10,31 +10,24 @@
 
 
 <div class="alert alert-info" role="alert">
-  <a href="#" class="alert-link">
-
     <h5><b><span class="label label-warning">HIGHLIGHTS</span></b></h5>
-
-   
-   <div class="slider">
-        <div class="spinner">
-            <iframe id="dispvid" src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0" alt="" ></iframe> 
-              
-            <iframe id="dispvid" src="https://www.youtube.com/embed/8BQEYBoo6XU?autoplay=0" alt="" ></iframe>   
-            
-            <iframe id="dispvid" src="https://www.youtube.com/embed/dsyCgDDfEM8?autoplay=0" alt="" ></iframe>
-        
-            <iframe id="dispvid" src="https://www.youtube.com/embed/NQliRklulAc?autoplay=0" alt="" ></iframe>
-            <iframe id="dispvid" src="https://www.youtube.com/embed/0mAZNV-c8SE?autoplay=0" alt="" ></iframe>
-            <iframe id="dispvid" src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>      
-        </div>
-
-
-<div id="btnbla">
-  <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
-  <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
-</div> 
-    </div>
-</a>
+        <div class="slider">
+                <div class="spinner">
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/u8Ty_RUODPU?autoplay=0" alt="" ></iframe> 
+                    
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/8BQEYBoo6XU?autoplay=0" alt="" ></iframe>   
+                    
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/dsyCgDDfEM8?autoplay=0" alt="" ></iframe>
+                
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/NQliRklulAc?autoplay=0" alt="" ></iframe>
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/0mAZNV-c8SE?autoplay=0" alt="" ></iframe>
+                    <iframe id="dispvid" src="https://www.youtube.com/embed/vFVLo1VE7FI?autoplay=0" alt="" ></iframe>      
+                </div>
+                <div id="btnbla">
+                <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
+                <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
+                </div> 
+        </div>   
 </div>
 
 <h5><b><span  class="label label-info" onclick="getAdmin()">FOR SALE</span></b></h5>
@@ -152,17 +145,17 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Recipe Name</label>
+                        <label>Name:</label>
                         <input type="text" class="form-control"
                         name="name" />
                     </div>
                     <div class="form-group">
-                        <label>Ingredients</label>
+                        <label>Price:</label>
                         <textarea class="form-control"
                         name="ingredients"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Directions</label>
+                        <label>Description:</label>
                         <textarea class="form-control"
                         name="directions"></textarea>
                     </div>
@@ -219,17 +212,17 @@
                     
 
                     <div class="form-group">
-                        <label>Recipe Name</label>
+                        <label>Name:</label>
                         <input type="text" class="form-control"
                         name="name" id="edit-form-name"/>
                     </div>
                     <div class="form-group">
-                        <label>Ingredients</label>
+                        <label>Price:</label>
                         <textarea class="form-control"
                         name="ingredients" id="edit-form-ingredients"></textarea>
                     </div>
                     <div class="form-group">
-                        <label>Directions</label>
+                        <label>Description:</label>
                         <textarea class="form-control"
                         name="directions" id="edit-form-directions"></textarea>
                     </div>
