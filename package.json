@@ -1,7 +1,7 @@
 {
-  "name": "recipebook",
+  "name": "abkha",
   "version": "1.0.0",
-  "description": "Recipe Manager",
+  "description": "abkha Manager",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newbie8800/recipes2.git"
+    "url": "git+https://github.com/newbie8800/abkha.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/newbie8800/recipes2/issues"
+    "url": "https://github.com/newbie8800/abkha/issues"
   },
-  "homepage": "https://github.com/newbie8800/recipes2#readme"
+  "homepage": "https://github.com/newbie8800/abkha#readme"
 }

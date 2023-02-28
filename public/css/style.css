@@ -1,6 +1,8 @@
 body{
     margin-top:10px;
     background:#f9f9f9;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #inputs {
@@ -93,7 +95,7 @@ body{
 
 
 .slider {
-    perspective: 1200px;
+    perspective: 1200px; 
     padding-top: 5%;
     /* padding-right: 50%; */
 }
@@ -166,5 +168,11 @@ body{
         width: 50%;
         height: auto;
        
+    }
+    .slider {
+        perspective: 500px;
+        
+        padding-top: 5%;
+        /* padding-right: 50%; */
     }
   }

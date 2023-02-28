@@ -32,25 +32,13 @@
 <div id="btnbla">
   <button class="alignleft" onclick="galleryspin('-')"><b>&lt;</b></button>
   <button class="alignright" onclick="galleryspin('')"><b>&gt;</b></button>
-</div>
-
-   
-           
+</div> 
     </div>
-
-   
-
-
-
-
-
-
-
 </a>
 </div>
 
-
-    
+<h5><b><span  class="label label-info" onclick="getAdmin()">FOR SALE</span></b></h5>
+   
 
     <button type="button" id="add_id"class="btn btn-primary btn-block" data-toggle="modal" data-target="#formModal" style="display: none">
     Add recipe
@@ -58,7 +46,7 @@
    
 
   
-
+ 
                     
 
 
